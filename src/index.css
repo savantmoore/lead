@@ -1,0 +1,471 @@
+
+/*====================================
+General
+====================================*/
+
+#root{
+  background: url(http://www.freeppt.net/background/origami-money-wallpapers-backgrounds-for-powerpoint.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+  font-family: 'Titillium Web', sans-serif;
+  min-height:100vh;
+  padding:2vh 5% 2vh 5%;
+}
+
+
+/* landing header */
+h1{
+  color:#ff0000;
+  font-size: 3em;
+  font-weight:800;
+  margin-bottom:3vh;
+  padding-bottom:2vh;
+  border-bottom:1px solid #A9F5BC;
+  text-align:center;
+}
+
+h3{
+  font-size: 2em;
+  display: inline-block;
+  color: #ff0000;
+}
+
+
+/* used for control labels */
+h4{
+  font-size: 1.5em;
+  padding: 0vh 0px 1vh 0px;
+}
+
+h5{
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  line-height: 1.5em;
+
+}
+
+h6{
+	font-size: 1.5em;
+	font-weight: 300;
+	padding: 2vh 0px 2vh 0px;
+	line-height:1.5em;
+}
+
+select{
+  text-align-last:center !important;
+}
+
+
+ul {
+  list-style-type: none !important;
+}
+
+
+.control-label{
+  text-align: center;
+  display: block;
+}
+
+.input-cont{
+  display: block;
+  margin: auto;
+  width:13em;
+}
+
+  /* diff styles below for difference views */
+  .dollar-sign{
+    display: inline-block;
+    color: #585858;
+  }
+
+  .dollar-input{
+    width: 5em;
+    font-size: 2em;
+    margin: auto;
+    display: inline-block;
+    height: 2em;
+  }
+
+  .dollar-input:focus{
+      -webkit-box-shadow: 0px 2px 31px -1px #A9F5BC;
+      -moz-box-shadow: 0px 2px 31px -1px #A9F5BC;
+      box-shadow: 0px 2px 31px -1px #A9F5BC;
+      border-radius:5px;
+      border:1px solid #ffffff;
+  }
+
+.nav-btn{
+  min-width:50%;
+  max-width: 800px;
+  margin: auto;
+  color:#333333;
+  border-radius: 8px;
+  font-weight:800;
+  text-decoration: none;
+  font-size: 2em;
+  padding: 5px 15px 5px 15px;
+}
+
+
+/*==========General Responsive ====== */
+
+@media(max-width: 700px){
+    h1{
+      font-size: 2.5em;
+    }
+
+    h3{
+      font-size: 1.25em;
+    }
+
+    h6{
+      font-size: 1em;
+    }
+
+
+
+    select{
+      font-size: 1em !important;
+      height: 3em !important;
+    }
+
+    .nav-btn{
+      font-size: 1em;
+    }
+
+    .input-cont{
+      display: block !important;
+    }
+
+}
+
+
+/*====================================
+Landing
+====================================*/
+#Landing{
+  width:80%;
+
+}
+
+#landing-jumbotron{
+  text-align:center;
+  width:100%;
+  display:block;
+  background-color:#f9f9f9;
+}
+
+/*====================================
+Menu
+====================================*/
+
+@media(max-width:700px){
+  #menu{
+    bottom: 0 !important;
+  }
+
+  .menu-btn{
+    display: block !important;
+    width: 100% !important;
+  }
+
+}
+
+.link{
+  width: 100%;
+  display: block;
+  color: #585858;
+}
+
+.link:hover{
+  text-decoration: none;
+}
+
+/*====================================
+WhatIsARainyDayFund
+====================================*/
+
+#WhatIsARainyDayFund h3 {
+  width: 75%;
+  margin: auto;
+  padding: 1vh 0px 2vh 0px;
+  display: block !important;
+  line-height: 1.5em;
+}
+
+/*====================================
+Assumptions
+====================================*/
+
+#assumptions-form{
+  width: 60%;
+  margin: auto;
+  padding: 5vh 0px 5vh 0px;
+}
+
+  @media(max-width:700px){
+    #assumptions-form{
+      padding-top: 1vh !important;
+    }
+  }
+
+  .assumption{
+    padding: 1vh 0px 5vh 0px;
+    border-bottom:1px solid #A9F5BC;
+  }
+
+    .assumption .dollar-sign{
+      color: #585858;
+      height: 2em;
+      font-size: 2em;
+      vertical-align: top;
+      line-height: 1em;
+      padding: 0.5em 0.75em 0.5em 0.25em;
+    }
+
+    #select-income-src{
+      font-size: 2em;
+      height: 2em;
+    }
+
+    #select-income-src:focus{
+       -webkit-box-shadow: 0px 2px 31px -1px #A9F5BC;
+        -moz-box-shadow: 0px 2px 31px -1px #A9F5BC;
+        box-shadow: 0px 2px 31px -1px #A9F5BC;
+        border-radius:5px;
+        border:1px solid #ffffff;
+
+    }
+
+
+/*====================================
+Expenses
+====================================*/
+
+#Expenses input:focus{
+  -webkit-box-shadow: 0px 2px 31px -4px #A9F5BC;
+    -moz-box-shadow: 0px 2px 31px -4px #A9F5BC;
+    box-shadow: 0px 2px 31px -4px #A9F5BC;
+    border-radius:5px;
+    border:1px solid #ffffff;
+}
+
+
+#expense-header{
+  text-align: center;
+  padding: 2vh 0px 2vh 0px;
+}
+
+  #add-expense-btn{
+    margin: auto;
+    display: block;
+    max-width: 500px;
+
+
+    background-image: linear-gradient(to bottom, #f9f9f9 -60%, #A9F5BC 100%);
+  }
+
+  #add-expense-btn:hover{
+    background-color: #A9F5BC;
+  }
+
+   #add-expense-btn:focus{
+    background-color: #A9F5BC;
+  }
+
+/*Expense*/
+
+#expense-list{
+  margin: 5vh 0px 0px 0px;
+}
+
+@media(min-width:1000px){
+  #expense-list{
+    width: 70%;
+    margin: auto !important;
+    margin-top: 2vh !important;
+  }
+}
+
+
+
+.expense-item{
+  width: 80%;
+  margin: auto;
+  padding: 1vh 0px 1vh 1px;
+}
+
+    .expense-name{
+      display: inline-block;
+      width: 55%;
+      font-size: 1.25em;
+      height: 2em;
+      padding-right: 2%;
+    }
+
+    .expense-amt-group{
+      display: inline-flex;
+      height: 2em;
+      font-size: 1.25em !important;
+      float: right;
+    }
+
+        .expense-amt-group .dollar-sign{
+          width: 1.5em ;
+          font-size: 1.25em;
+          float: left;
+          height: 1.55em;
+
+        }
+
+        .expense-amt{
+          display: inline-block !important;
+          width: 4.5em !important;
+          font-size: 1.25em !important;
+        }
+
+    .remove-expense{
+      line-height: 1.8em;
+      color: #bdbdbd;
+      display: inline-block;
+      font-size: 1em;
+      padding-left: 5%;
+      cursor: pointer;
+    }
+
+    @media(max-width:700px) {
+        .expense-item{
+          width: 80%;
+        }
+
+        .expense-name{
+          width:100%;
+          margin-bottom: 0vh;
+          display: inline-flex !important;
+        }
+
+        .expense-amt-group{
+          width: 100%;
+          float: none !important;
+          padding-left: 0px !important;
+        }
+
+        .expense-amt-group .dollar-sign{
+          display: inline-flex !important;
+          width: 14%;
+        }
+
+        .expense-amt{
+          display: inline-block !important;
+          width: 86% !important;
+        }
+    }
+
+#TotalExpenses{
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 70%;
+  border-top:1px solid #A9F5BC;
+  margin-top: 6vh;
+}
+
+
+    #expenses-total{
+      float: right;
+    }
+
+    @media(max-width:700px){
+      #TotalExpenses h3{
+        text-align: center !important;
+        display: block !important;
+      }
+
+      #expenses-total{
+        display: block !important;
+        float: none;
+        margin: 1vh 0px 0px 0px !important;
+        text-align: center;
+      }
+    }
+
+/*====================================
+Savings Plan
+====================================*/
+
+#SavingsPlan{
+  width: 75%;
+  margin: auto;
+}
+
+.warning-text{
+  color: #FE2E2E;
+  text-align: center;
+  display: block;
+}
+
+.input-warning{
+   -webkit-box-shadow: 0px 2px 31px -1px #FE2E2E;
+      -moz-box-shadow: 0px 2px 31px -1px #FE2E2E;
+      box-shadow: 0px 2px 31px -1px #FE2E2E;
+      border-radius:5px;
+      border:1px solid #ffffff;
+}
+
+#SavingsPlan .input-cont{
+  display: inline-block;
+  margin: auto;
+  padding: 0px 0em 0px 1em;
+  width: 13em;
+}
+
+#SavingsPlan h3{
+  line-height: 1.25em;
+  margin-top: 2vh ;
+  margin-bottom: 2vh;
+
+}
+
+#SavingsPlan .dollar-sign{
+    color: #585858;
+      height: 2em;
+      font-size: 2em;
+      vertical-align: top;
+      line-height: 1em;
+      padding: 0.5em 0.75em 0.5em 0.25em;
+}
+
+#monthlySavings{
+  width: 4.5em;
+}
+
+#percent-income-cont{
+  width: 13em !important;
+}
+
+#percent-of-income{
+  width: 4.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
